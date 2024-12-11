@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    color: aqua;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wrapper-container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.wrapper-container form input {
+    flex-grow: 1;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    margin-right: 10px;
+}
+
+.buttons {
+    padding: 15px;
+    background-color: aqua;
+    border: none;
+    border-radius: 21px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.todolist {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.todo {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #252424;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+
+.text-box {
+    flex-grow: 1;
+    margin-left: 10px;
+    color: white;
+}
+
+.todo-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + .text-box {
+    text-decoration: line-through;
+    color: bisque;
+}
+/* Remove or comment out this rule */
+
+
+/* Remove or comment out this rule */
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .wrapper-container form input {
+        margin-right: 5px;
+    }
+
+    .todo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .text-box {
+        margin: 10px 0;
+    }
+}
